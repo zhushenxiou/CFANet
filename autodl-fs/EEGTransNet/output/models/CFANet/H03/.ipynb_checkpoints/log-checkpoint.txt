@@ -1,0 +1,18 @@
+Epoch [1] | Train Loss: 1.383936  Train Accuracy: 0.259572 | Test Loss: 1.387451 Test Accuracy: 0.293750 Test Kappa: 0.058333 
+Epoch [51] | Train Loss: 0.554864  Train Accuracy: 0.811937 | Test Loss: 0.521116 Test Accuracy: 0.806250 Test Kappa: 0.741667 
+Epoch [101] | Train Loss: 0.307254  Train Accuracy: 0.915541 | Test Loss: 0.303234 Test Accuracy: 0.881250 Test Kappa: 0.841667 
+Epoch [151] | Train Loss: 0.193057  Train Accuracy: 0.955518 | Test Loss: 0.224771 Test Accuracy: 0.931250 Test Kappa: 0.908333 
+Epoch [201] | Train Loss: 0.129233  Train Accuracy: 0.970158 | Test Loss: 0.180369 Test Accuracy: 0.943750 Test Kappa: 0.925000 
+Epoch [251] | Train Loss: 0.091902  Train Accuracy: 0.979167 | Test Loss: 0.156426 Test Accuracy: 0.956250 Test Kappa: 0.941667 
+Epoch [301] | Train Loss: 0.067941  Train Accuracy: 0.987613 | Test Loss: 0.125419 Test Accuracy: 0.968750 Test Kappa: 0.958333 
+Epoch [351] | Train Loss: 0.049836  Train Accuracy: 0.989865 | Test Loss: 0.115189 Test Accuracy: 0.968750 Test Kappa: 0.958333 
+Epoch [401] | Train Loss: 0.034737  Train Accuracy: 0.993806 | Test Loss: 0.112718 Test Accuracy: 0.962500 Test Kappa: 0.950000 
+Epoch [451] | Train Loss: 0.029379  Train Accuracy: 0.994369 | Test Loss: 0.100881 Test Accuracy: 0.968750 Test Kappa: 0.958333 
+Epoch [501] | Train Loss: 0.022799  Train Accuracy: 0.995495 | Test Loss: 0.089206 Test Accuracy: 0.962500 Test Kappa: 0.950000 
+Epoch [551] | Train Loss: 0.022739  Train Accuracy: 0.996059 | Test Loss: 0.050265 Test Accuracy: 0.975000 Test Kappa: 0.966667 
+Epoch [601] | Train Loss: 0.013845  Train Accuracy: 0.998874 | Test Loss: 0.044683 Test Accuracy: 0.975000 Test Kappa: 0.966667 
+Epoch [651] | Train Loss: 0.012168  Train Accuracy: 0.997748 | Test Loss: 0.024926 Test Accuracy: 0.987500 Test Kappa: 0.983333 
+Epoch [701] | Train Loss: 0.011827  Train Accuracy: 0.996622 | Test Loss: 0.066383 Test Accuracy: 0.981250 Test Kappa: 0.975000 
+The average accuracy is: 0.939802
+The best accuracy is: 1.000000
+The best kappa is: 1.000000
