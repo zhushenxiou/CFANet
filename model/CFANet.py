@@ -190,7 +190,7 @@ class LocalAttention(nn.Module):
         # 使用注意力权重加权 V
         attn_output = attn_weights * v  # 仅使用注意力权重对 v 进行加权
 
-        # 输出特征，使用 1x1 卷积进行通道压缩
+        # 输出特征，使用 1x1 卷积进行通道压缩, 无提升，注释
         #out = self.output_conv(attn_output)
 
         # 跳跃连接
@@ -203,7 +203,7 @@ class Classifier(nn.Module):
         super(Classifier, self).__init__()
 
         self.dense = nn.Sequential(
-            nn.Conv2d(8, num_classes, (1, 69)), #2A and 2B: 69 HGD:78
+            nn.Conv2d(8, num_classes, (1, 69)), #   2A and 2B: 69; HGD:78
             nn.LogSoftmax(dim=1)
         )
 
