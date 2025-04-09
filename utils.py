@@ -2,17 +2,14 @@ import numpy as np
 import torch
 import config
 
-'''
-config.num_segs = 8
-confgi.batch_size = 24
-'''
-
 """
+数据增强
 # 此方法通过混合同类样本的不同时间段，生成具有局部特征组合的新数据，可有效提升模型对时间局部模式的识别能力。
 1.适用于时间序列分类任务（如EEG、传感器数据）
 2.数据量较少时增加样本多样性
-3.假设时间段的局部特征比全局顺序更重要
+3.时间段的局部特征比全局顺序更重要的数据适用
 """
+
 def data_augmentation(data, label):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     # 增强后的数据和标签
@@ -20,10 +17,10 @@ def data_augmentation(data, label):
     aug_label = []
 
     N, C, T = data.shape  # 提取维度(样本数, 通道, 时间采样点)
-    seg_size = T // config.num_segs   # 每段时间长度 
-    aug_data_size = config.batch_size // 4  # 每类生成样本数 
+    seg_size = T // config.num_segs   # 每段时间长度
+    aug_data_size = config.batch_size // 4  # 每类生成样本数
 
-    # 这个循环遍历所有类别（有4个类别），2a为4，2b为2， HGD为
+    # 这个循环遍历所有类别（假设有4个类别），2a为4，2b为2， HGD为4
     for cls in range(4):
         cls_idx = torch.where(label == cls)
         cls_data = data[cls_idx]
